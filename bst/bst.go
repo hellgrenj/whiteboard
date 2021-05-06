@@ -83,11 +83,7 @@ func count(node *Node) int {
 	return c
 }
 func (t *Tree) Search(number int) *Node {
-	if t.root == nil || t.root.Value == number {
-		return t.root
-	} else {
-		return search(t.root, number)
-	}
+	return search(t.root, number)
 }
 func search(node *Node, number int) *Node {
 	if node == nil || node.Value == number {
