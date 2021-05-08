@@ -34,13 +34,11 @@ func (n *Node) insert(node *Node) {
 		}
 	}
 }
+
 func (t *Tree) Invert() {
-	if t.root != nil {
-		invert(t.root)
-	} else {
-		fmt.Println("empty tree can not be inverted")
-	}
+	invert(t.root)
 }
+
 func invert(n *Node) {
 	if n == nil {
 		return
